@@ -27,10 +27,15 @@ variable "images" {
 }
 
 variable "instance_type" {
-  type = "string"
+  type    = "string"
+  default = "t2.micro"
 }
 
 variable "zone" {
+  type = "string"
+}
+
+variable "keypair_name" {
   type = "string"
 }
 

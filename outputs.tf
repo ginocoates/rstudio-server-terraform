@@ -7,5 +7,5 @@ output "rstudio_DNS" {
 }
 
 output "rstudio-ssh-command" {
-  value = "ssh -i ${var.private_key} ubuntu@${aws_instance.eip.public_ip}"
+  value = "ssh -i ${var.private_key} ubuntu@${aws_eip.rstudio_eip.public_ip}"
 }
