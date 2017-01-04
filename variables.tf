@@ -46,3 +46,8 @@ variable "private_key" {
 variable "rstudio_password" {
   type = "string"
 }
+
+variable "disk_size" {
+  type    = "string"
+  default = "40"
+}
