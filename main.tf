@@ -19,7 +19,7 @@ resource "aws_instance" "rstudio" {
 
   root_block_device = {
     "volume_type"           = "standard"
-    "volume_size"           = 100
+    "volume_size"           = "${var.disk_size}"
     "delete_on_termination" = "${var.keep_data}"
   }
 
