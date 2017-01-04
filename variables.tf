@@ -51,3 +51,8 @@ variable "disk_size" {
   type    = "string"
   default = "40"
 }
+
+variable "keep_data" {
+  type    = "string"
+  default = "yes"
+}
