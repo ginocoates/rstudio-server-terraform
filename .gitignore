@@ -1,3 +1,5 @@
-# Compiled files
+# Compiled files and variable files
 *.tfstate
 *.tfstate.backup
+*.plan
+*.tfvars
